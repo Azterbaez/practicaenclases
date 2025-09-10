@@ -13,6 +13,7 @@ console.log("Eliminar primero:", eliminarPrimero(colores));
 
 let numeros = [10, 20, 30, 40];
 console.log("Buscar índice de 30:", buscarIndice(numeros, 30));
+
 console.log("Cantidad de elementos:", cantidadElementos(numeros));
 
 let desordenados = [4, 1, 3, 2];
