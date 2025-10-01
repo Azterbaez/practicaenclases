@@ -1,0 +1,90 @@
+const numeros = [1, 2, 3, 4, 5];
+
+const suma = numeros.reduce((acc, num) => acc + num, 0);
+
+console.log(suma); // 15  
+
+
+const calificaciones = [80, 90, 70, 85, 95];
+
+const sumas = calificaciones.reduce((acc, cal) => acc + num, 0);
+const promedio = sumas / calificaciones.length;
+
+console.log(promedio); // 84
+
+
+const productos = [
+{ nombre: "Camisa", precio: 20 },
+{ nombre: "Pantalón", precio: 30 },
+{ nombre: "Zapatos", precio: 50 }
+];
+const total = productos.reduce((acc, prod) => acc + prod.precio, 0);
+console.log(total); // 100
+
+
+
+// busca el numero menos de 10
+const edades = [25, 35, 51, 10, 8, 13];
+const resultado = edades.find (ed => ed < 10);
+console.log(resultado); 
+
+
+const usuario = [
+{ id: 1, nombre: "Carlos",salario:20000 },
+{ id: 2, nombre: "Lucía",salario:17300  },
+{ id: 3, nombre: "Marta",salario:11000  },
+{ id: 4, nombre: "eliad",salario:21000  },
+{ id: 4, nombre: "elyn",salario:18000  }
+];
+const usuarioencontrado = usuario.find (us => us.salario < 20000 && us.nombre.startsWith("e")
+);
+
+console.log(usuarioencontrado);
+
+// every()
+const edade = [18, 22, 30, 25];
+const todosMayores = edade.every(edad => edad >= 18);
+console.log(todosMayores); // true
+
+
+
+
+const tareas = [
+{ nombre: "Estudiar", completada: true },
+
+
+{ nombre: "Ejercicio", completada: true },
+{ nombre: "Leer", completada: false }
+];
+const unotienemayor22 = usuario.every(us => us.salario < 30000);
+console.log(unotienemayor22); // true
+
+
+
+const personas = [
+{ nombre: "Ana", edad: 33 },
+{ nombre: "fernanda", edad: 20 },
+{ nombre: "juana", edad: 18 },
+{ nombre: "mariana", edad: 40 },
+{ nombre: "armanda", edad: 63 },
+{ nombre: "luciana", edad: 11 }
+];
+const todasMayores = personas.every(per => per.edad > 20);
+console.log(todasMayores); 
+
+
+
+const empiezaConL = personas.find(p => p.nombre.startsWith("L"));
+console.log(empiezaConL);
+
+
+const sumaEdades = personas.reduce((acc, p) => acc + p.edad, 0);
+console.log(sumaEdades);
+
+
+const todosMayoresA15 = personas.every(p => p.edad >= 20);
+console.log(todosMayoresA15);
+
+
+const algunoTiene40 = personas.some(p => p.edad === 40);
+console.log(algunoTiene40); 
