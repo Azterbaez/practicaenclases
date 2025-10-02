@@ -7,7 +7,7 @@ console.log(suma); // 15
 
 const calificaciones = [80, 90, 70, 85, 95];
 
-const sumas = calificaciones.reduce((acc, cal) => acc + num, 0);
+const sumas = calificaciones.reduce((acc, num) => acc + num, 0);
 const promedio = sumas / calificaciones.length;
 
 console.log(promedio); // 84
